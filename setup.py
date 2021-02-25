@@ -3,7 +3,7 @@ import pathlib
 from setuptools import setup
 
 HERE = pathlib.Path(__file__).parent
-readme = (HERE / "README.md").read_text()
+readme = (HERE / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="pnoise",
