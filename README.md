@@ -24,7 +24,7 @@ See a performance comparison [here](https://github.com/plottertools/vnoise/tree/
 ## Installation
 
 ```
-pip install git+https://github.com/plottertools/pnoise#egg=pnoise
+pip install pnoise
 ```
 
 ## License
