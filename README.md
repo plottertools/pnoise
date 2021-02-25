@@ -1,10 +1,10 @@
 # *pnoise*
 
-*pnoise* is a pure-Python, Numpy-based, vectorized port of Processing's `noise()` function. 
+*pnoise* is a pure-Python, Numpy-based, vectorized port of Processing's `noise()` function. The `p` in *pnoise* stands for Processin, Perlin, Python, "port", and probably other things I haven't though of yet.
 
 ## Why?
 
-I wrote this port before switching to [vnoise](https://github.com/plottertools/vnoise) and although I'm no longer using it I figured I would keep it around.
+I wrote this port before switching to [vnoise](https://github.com/plottertools/vnoise) and, although I'm no longer using it, I figured I would keep it around. 
 
 ## How does it compare to *vnoise*?
 
@@ -12,6 +12,7 @@ I wrote this port before switching to [vnoise](https://github.com/plottertools/v
 | --- | --- | --- |
 | Algorithm | "classic Perlin noise of 1983" | "Perlin improved
 noise" |
+| License | LGPL v2.1 | MIT |
 | Scalar API | ✅ | ✅ |
 | Vectorized API | ✅ | ✅ |
 | 3D function | ✅ | ✅ |
