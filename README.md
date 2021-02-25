@@ -18,15 +18,8 @@ noise" |
 | 3D function | ✅ | ✅ |
 | 2D function | ❌ (can be derived from 3D but slower) | ✅ |
 | 1D function | ❌ (can be derived from 3D but slower) | ✅ |
-| Scalar performance 3D (1 octave) | - | ~2x faster |
-| Scalar performance 3D (4 octave) | ~2x faster | - |
-| Vectorized performance 3D (1 octave) | - | ~2.5x faster |
-| Vectorized performance 3D (4 octave) | ~2x faster | - |
-| Vectorized performance 2D (1 octave) | - | ~5.5x faster |
-| Vectorized performance 2D (4 octave) | - | ~30% faster |
-| Vectorized performance 1D (1 octave) | - | ~8x faster |
-| Vectorized performance 1D (4 octave) | similar | similar |
 
+See a performance comparison [here](https://github.com/plottertools/vnoise/tree/main/benchmarks).
 
 ## Installation
 
