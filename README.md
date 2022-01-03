@@ -10,8 +10,7 @@ I wrote this port before switching to [vnoise](https://github.com/plottertools/v
 
 | | *pnoise* | *vnoise* |
 | --- | --- | --- |
-| Algorithm | "classic Perlin noise of 1983" | "Perlin improved
-noise" |
+| Algorithm | "classic Perlin noise of 1983" | "Perlin improved noise" |
 | License | LGPL v2.1 | MIT |
 | Scalar API | ✅ | ✅ |
 | Vectorized API | ✅ | ✅ |
