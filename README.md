@@ -1,6 +1,6 @@
 # *pnoise*
 
-*pnoise* is a pure-Python, Numpy-based, vectorized port of Processing's `noise()` function. The `p` in *pnoise* stands for Processin, Perlin, Python, "port", and probably other things I haven't though of yet.
+*pnoise* is a pure-Python, Numpy-based, vectorized port of Processing's `noise()` function. The `p` in *pnoise* stands for Processing, Perlin, Python, "port", and probably other things I haven't though of yet.
 
 ## Why?
 
