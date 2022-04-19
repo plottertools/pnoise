@@ -1,7 +1,7 @@
 """pnoise library"""
 """
 Ported from the Processing project - http://processing.org
-Copyright (c) 2021 Antoine Beyeler
+Copyright (c) 2021-2022 Antoine Beyeler
 Copyright (c) 2012-15 The Processing Foundation
 Copyright (c) 2004-12 Ben Fry and Casey Reas
 Copyright (c) 2001-04 Massachusetts Institute of Technology
@@ -51,7 +51,7 @@ class Noise:
         y: Union[Number, Sequence[Number]],
         z: Union[Number, Sequence[Number]],
         grid_mode: bool = True,
-    ) -> np.ndarray:
+    ) -> Union[np.ndarray, float]:
         """Compute perlin noise for a range of values.
 
         Each of the x, y, and z argument may be 1D sequence of float. Perlin noise will be
@@ -65,7 +65,10 @@ class Noise:
         if not grid_mode or single:
             grid = np.array([x, y, z], dtype=float)
         else:
-            grid = np.array(np.meshgrid(x, y, z, indexing="ij", copy=False), dtype=float)
+            grid = np.array(
+                np.meshgrid(np.array(x), np.array(y), np.array(z), indexing="ij", copy=False),
+                dtype=float,
+            )
 
         np.abs(grid, out=grid)
         grid_i = grid.astype(int)
@@ -109,7 +112,7 @@ class Noise:
             grid[idx] -= 1.0
 
         if single:
-            return np.asscalar(r)
+            return float(r.item())
         elif not grid_mode:
             return r
         else:
