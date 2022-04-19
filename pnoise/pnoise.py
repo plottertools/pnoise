@@ -1,7 +1,7 @@
 """pnoise library"""
 """
 Ported from the Processing project - http://processing.org
-Copyright (c) 2021 Antoine Beyeler
+Copyright (c) 2021-2022 Antoine Beyeler
 Copyright (c) 2012-15 The Processing Foundation
 Copyright (c) 2004-12 Ben Fry and Casey Reas
 Copyright (c) 2001-04 Massachusetts Institute of Technology
@@ -109,7 +109,7 @@ class Noise:
             grid[idx] -= 1.0
 
         if single:
-            return np.asscalar(r)
+            return np.item(r)
         elif not grid_mode:
             return r
         else:
