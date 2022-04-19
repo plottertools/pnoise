@@ -38,7 +38,7 @@ jobs:
 
     - name: Lint
       run: |
-        black --diff pnoise tests
+        black --check --diff pnoise tests
         isort --check --diff pnoise tests
 
     - name: Pytest
