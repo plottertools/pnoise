@@ -7,7 +7,7 @@ readme = (HERE / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="pnoise",
-    version="0.2.0",
+    version="0.3.0a0",
     description="Vectorized port of Processing noise() function",
     long_description=readme,
     long_description_content_type="text/markdown",
