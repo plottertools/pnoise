@@ -19,7 +19,7 @@ setup(
     python_requires=">=3.6",
     install_requires=[
         "numpy>=1.19",
-        "setuptools",
+        "importlib_metadata;python_version<'3.8'",
     ],
     classifiers=[
         "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",

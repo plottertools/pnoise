@@ -2,9 +2,12 @@ from .pnoise import Noise
 
 
 def _get_version() -> str:
-    import pkg_resources
+    try:
+        from importlib.metadata import version
+    except ModuleNotFoundError:
+        from importlib_metadata import version
 
-    return pkg_resources.get_distribution("pnoise").version
+    return version(__name__)
 
 
 __version__ = _get_version()
